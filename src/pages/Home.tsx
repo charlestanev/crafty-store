@@ -1,14 +1,11 @@
+import ThemeToggle from "../components/ui/ThemeToggle";
 
-const Home = () => {
+export default function Home() {
     return (
-        <>
-            <div>Home</div>
-            <div>Home</div>
-            <div>Home</div>
-            <div>Home</div>
-            <div>Home</div>
-        </>
+        <div className="p-8">
+            <h1 className="text-2xl font-bold mb-4">Начало</h1>
+            <ThemeToggle />
+        </div>
     )
 }
 
-export default Home
