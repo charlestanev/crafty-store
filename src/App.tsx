@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
+import AppRouter from './routes/AppRouter'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-
-    </>
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-all">
+      <AppRouter />
+    </div>
   )
 }
 
